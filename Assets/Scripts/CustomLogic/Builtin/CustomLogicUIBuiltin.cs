@@ -6,7 +6,6 @@ using Photon.Realtime;
 using Settings;
 using System.Collections.Generic;
 using UI;
-using UnityEngine;
 
 namespace CustomLogic
 {
@@ -153,6 +152,27 @@ namespace CustomLogic
                     ((InGameMenu)UIManager.CurrentMenu).ShowCharacterChangeMenu();
                 }
                 return null;
+            }
+            if (name == "ShowDamage")
+            {
+                int damage = parameters[0].UnboxToInt();
+                ((InGameMenu)UIManager.CurrentMenu).ShowKillScore(damage);
+            }
+            if (name == "AddToKillFeed")
+            {
+                string killer = (string)parameters[0];
+                string victim = (string)parameters[1];
+                int score = parameters[2].UnboxToInt();
+                string weapon = (string)parameters[3];
+                ((InGameMenu)UIManager.CurrentMenu).ShowKillFeed(killer, victim, score, weapon);
+            }
+            if (name == "AddToKillFeedAll")
+            {
+                string killer = (string)parameters[0];
+                string victim = (string)parameters[1];
+                int score = parameters[2].UnboxToInt();
+                string weapon = (string)parameters[3];
+                RPCManager.PhotonView.RPC("ShowKillFeedRPC", RpcTarget.All, new object[] { killer, victim, score, weapon });
             }
             return base.CallMethod(name, parameters);
         }
