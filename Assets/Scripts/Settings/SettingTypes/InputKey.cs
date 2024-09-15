@@ -153,9 +153,9 @@ namespace Settings
         protected bool GetSpecial(SpecialKey specialKey)
         {
             if (specialKey == SpecialKey.WheelUp)
-                return Input.GetAxis("Mouse ScrollWheel") > 0f;
+                return Input.GetAxis("Mouse ScrollWheel") > 0f || Input.mouseScrollDelta.x > 0f;
             else if (specialKey == SpecialKey.WheelDown)
-                return Input.GetAxis("Mouse ScrollWheel") < 0f;
+                return Input.GetAxis("Mouse ScrollWheel") < 0f || Input.mouseScrollDelta.x < 0f;
             return false;
         }
     }
