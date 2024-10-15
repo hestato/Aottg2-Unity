@@ -3,7 +3,9 @@ guid: eb7b3b1e194d16d44b5d3ccff584e299
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Parent: {instanceID: 0}
+  - scrollBox: {fileID: 1642505392015198411, guid: 93d2c6ea7a2709048a32483c804720e6, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

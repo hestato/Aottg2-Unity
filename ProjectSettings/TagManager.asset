@@ -6,6 +6,7 @@ TagManager:
   tags:
   - FxTemporaire
   - Speaker
+  - ChatBoxTest
   layers:
   - Default
   - TransparentFX

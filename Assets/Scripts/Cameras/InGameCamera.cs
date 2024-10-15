@@ -289,7 +289,7 @@ namespace Cameras
             Cache.Transform.position -= Vector3.up * (0.6f - height) * 2f;
             float sensitivity = SettingsManager.GeneralSettings.MouseSpeed.Value;
             int invertY = SettingsManager.GeneralSettings.InvertMouse.Value ? -1 : 1;
-            if (InGameMenu.InMenu())
+            if (InGameMenu.InMenu() || ChatManager.IsChatActive())
                 sensitivity = 0f;
             if (CurrentCameraMode == CameraInputMode.Original)
             {

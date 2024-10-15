@@ -3,7 +3,42 @@ guid: 606ab7041fca4ee4e946e351b0def411
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - TooltipPopup: {instanceID: 0}
+  - MessagePopup: {instanceID: 0}
+  - ConfirmPopup: {instanceID: 0}
+  - ExternalLinkPopup: {instanceID: 0}
+  - ColorPickPopup: {instanceID: 0}
+  - IconPickPopup: {instanceID: 0}
+  - Vector3Popup: {instanceID: 0}
+  - ExportPopup: {instanceID: 0}
+  - ImportPopup: {instanceID: 0}
+  - NewImportPopup: {instanceID: 0}
+  - KeybindPopup: {instanceID: 0}
+  - SetNamePopup: {instanceID: 0}
+  - SelectListPopup: {instanceID: 0}
+  - EmoteHandler: {instanceID: 0}
+  - ItemHandler: {instanceID: 0}
+  - CharacterInfoHandler: {instanceID: 0}
+  - HUDBottomHandler: {instanceID: 0}
+  - StylebarHandler: {instanceID: 0}
+  - scrollChat: {fileID: 1642505392015198411, guid: 93d2c6ea7a2709048a32483c804720e6, type: 3}
+  - NapeLock: {instanceID: 0}
+  - ChatPanel: {instanceID: 0}
+  - FeedPanel: {instanceID: 0}
+  - VoiceChatPanel: {instanceID: 0}
+  - _settingsPopup: {instanceID: 0}
+  - _createGamePopup: {instanceID: 0}
+  - _pausePopup: {instanceID: 0}
+  - _characterPopup: {instanceID: 0}
+  - _characterChangePopup: {instanceID: 0}
+  - _scoreboardPopup: {instanceID: 0}
+  - _selectMapPopup: {instanceID: 0}
+  - SkillTooltipPopup: {instanceID: 0}
+  - _customAssetUrlPopup: {instanceID: 0}
+  - _snapshotPopup: {instanceID: 0}
+  - _globalPauseGamePopup: {instanceID: 0}
+  - _cutsceneDialoguePanel: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -313,6 +313,8 @@
 		"UI.ShowPing": "Show ping",
 		"UI.ShowEmotes": "Show emotes",
 		"UI.ShowNames": "Show names",
+		"UI.ChatBackground": "Chat Background",
+		"UI.ChatBackgrounds": ["Clear Grey","Solid Grey","Transparent"],
 		"UI.ShowNamesOptions": [ "All", "Mine", "Others", "None" ],
 		"UI.ShowHealthbars": "Show healthbars",
 		"UI.ShowHealthbarsOptions": [ "All", "Mine", "Others", "None" ],

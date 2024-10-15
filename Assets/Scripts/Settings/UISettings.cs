@@ -33,6 +33,7 @@ namespace Settings
         public BoolSetting ShowGameTime = new BoolSetting(false);
         public IntSetting ShowNames = new IntSetting(0);
         public IntSetting ShowHealthbars = new IntSetting(0);
+        public IntSetting ChatBackground = new IntSetting(0);
         public BoolSetting HighVisibilityNames = new BoolSetting(false);
         public BoolSetting FadeMainMenu = new BoolSetting(false);
         public BoolSetting FadeLoadscreen = new BoolSetting(true);

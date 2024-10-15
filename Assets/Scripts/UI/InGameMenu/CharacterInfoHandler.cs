@@ -35,7 +35,7 @@ namespace UI
         {
             RefreshDict();
             var camera = (InGameCamera)SceneLoader.CurrentCamera;
-            bool inMenu = InGameMenu.InMenu() || ((InGameManager)SceneLoader.CurrentGameManager).State == GameState.Loading;
+            bool inMenu = InGameMenu.InMenu() || ChatManager.IsChatActive() || ((InGameManager)SceneLoader.CurrentGameManager).State == GameState.Loading;
             ShowMode showNameMode = (ShowMode)SettingsManager.UISettings.ShowNames.Value;
             ShowMode showHealthMode = (ShowMode)SettingsManager.UISettings.ShowHealthbars.Value;
             bool highlyVisible = SettingsManager.UISettings.HighVisibilityNames.Value;

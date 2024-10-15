@@ -56,6 +56,8 @@ namespace UI
             ElementFactory.CreateInputSetting(DoublePanelRight, style, settings.ChatWidth, UIManager.GetLocale(cat, sub, "ChatWidth"), elementWidth: 100f);
             ElementFactory.CreateInputSetting(DoublePanelRight, style, settings.ChatHeight, UIManager.GetLocale(cat, sub, "ChatHeight"), elementWidth: 100f);
             ElementFactory.CreateInputSetting(DoublePanelRight, style, settings.ChatFontSize, UIManager.GetLocale(cat, sub, "ChatFontSize"), elementWidth: 100f);
+            ElementFactory.CreateDropdownSetting(DoublePanelRight, style, SettingsManager.UISettings.ChatBackground, UIManager.GetLocale(cat, sub, "ChatBackground"),
+                UIManager.GetLocaleArray(cat, sub, "ChatBackgrounds"), elementWidth: 200f);
         }
     }
 }
